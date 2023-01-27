@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Replit.css</title>
+  <link href="replit.min.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav>
+    <h3>Replit.css</h3>
+    <button class="colored" onclick="window.open('/__repl')">View on Replit</button>
+  </nav>
+
+  <div class="content">
+    <h3>Make your sites look like Replit, sort of.</h3>
+    <p>A select few drop-in styles to make small websites look like Replit. It comes with:</p>
+
+    <ul>
+      <li>Replit's navbar</li>
+      <li>Replit's buttons</li>
+      <li>Replit's color schemes (css variables)</li>
+      <li>Styled text/number/password inputs</li>
+      <li>Cards</li>
+      <li>Replit's border (.outline class)</li>
+      <li>A &lt;replit&gt; element for the Replit logo (color optional)</li>
+      <li>A LINE (see below)</li>
+    </ul>
+
+    <br>
+    
+    <h2>How do I use it?</h2>
+    <p>Simply fork this Repl or add the following stylesheet to your Repl! No crediting required.</p>
+    <input style="width: 500px;" type="text" disabled value="https://replitcss.codingmaster398.repl.co/replit.min.css">
+    <br><br>
+    <button class="colored" id="copy" onclick="copy()">Copy</button>
+    <button onclick="window.open('/__repl')">View the Repl</button>
+
+    <br><br>
+    
+    <hr>
+    
+    <br>
+    <button>Button</button>
+    <br><br>
+    <button disabled>Disabled Button</button>
+    <br><br>
+    <button class="fill">Filled Button</button>
+    <br><br>
+    <button class="colored">Blue Button</button>
+    <br><br>
+    <button class="colored" style="background-color: var(--accent-negative-default)">Red button</button>
+    <br><br>
+    <input type="text" style="width: 400px;" placeholder="This is an input">
+    <br><br>
+    <card>
+      <h4>This is a card</h4>
+      <span>Just an inline block.</span>
+    </card>
+
+    <br><br>
+
+    <h3>The Replit logo: <replit/></h3>
+
+    <p>3 colors! <replit class="white"></replit> <replit class="black"></replit> <replit></replit></p>
+    
+    <br>
+
+    <h3>Images have the outline by default</h3>
+    <p>Cute!</p>
+    
+    <br>
+    
+    <img
+      src="https://cdn-prd.content.metamorphosis.com/wp-content/uploads/sites/2/2022/06/cat-winking-main-768x513.jpg">
+  </div>
+</body>
+
+</html>
